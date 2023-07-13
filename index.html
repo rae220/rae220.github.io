@@ -1,9 +1,150 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href=".//styles/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/b3904e5a13.js" crossorigin="anonymous"></script>
+    <script src="./main.js " type ="text/javascript" defer></script>
+    <title>Rae Taylor</title>
+    
+</head>
+
 <body>
-  <h1>Rae Taylor</h1>
-  <p>Welcome to my world!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+    <!-- name and nav bar -->
+    <header>
+        
+        <h1 id="name">Rae Taylor</h1>
+        <nav id="nav-bar"> 
+            <ul id="nav-list">
+                <li><a href="#" >Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#project-section">Projects</a></li>
+                <li><a href="#skill-section">Skills</a></li>
+                <li><a href="#heading-contact">Contact</a></li>
+              </ul>
+        </nav>
+       
+    </header>
+
+
+    <!-- about me -->
+    <div id="about-me">
+        <div class="image-container">
+            <img id="img-me" src=".//images/image.png" alt="image of Rae Taylor">
+        </div>
+        <div class="paragraph">
+            <p><span>Hi I'm Rae... </span>I am currently running an education business, teaching children maths and English, which is based in Lancashire, UK.</p>
+            <p>My background is a BSc in Mathematics and a MSc in Computational Mathematics and Software Applications.</p>
+            <p>I am completing the Full-Stack Engineer course through Codecademy and IT Career Switch; 
+                I enjoy coding and I would like to work within this environment.</p>
+            <p>I enjoy yoga and  creating digital art.</p>
+        </div>
+       
+    </div>
+
+    <!-- projects -->
+    <div id="project-section">
+    <h3>Projects</h3>
+
+    <div id="projects"> 
+
+        <div class="column" class ="one">
+            <div class="img-project-container">
+                 <a href="./cozy-tea/index.html" aria-label="landing page of the cozt tea shop website" target="_blank"><img class="img-tea-shop" 
+                    src="./images/webpage-img-tea.jpg" alt="image of teashop website"></a>
+            </div>
+            <button type="button" id="tea" onclick="teaInfo()" >show</button>
+            <p id = "tea-info">A codcademy project... <br>
+                            creates a landing page for <br>The Cozy Tea Shop </p>
+        </div>
+
+
+        <div class="column">
+            <div class="img-project-container">
+                <a href = "./wood-shed/index.html" aria-label="landing page of the wood shed website" target="blank"><img class="img-wood-shed" 
+                  src="./images/webpage-img-wood.jpg" alt ="image of a wood turning website"></a>
+           </div>
+           <button  id="wood" type="button">show</button>
+           <p id = "wood-info">A codcademy project... <br>
+            creates a landing page for <br>The Wood Shed : <br>
+             a fictional wood turning artisan</p>
+        </div>
+
+        <div class="column">
+            <div class="img-project-container">
+                <a href="./mixed-messages/script.js" target="blank" aria-label="javascript code to generate message"><img class="img-mixed-messages" src="./images/output-img-mixed.jpg" 
+                 alt="image of a message generated from javascript code"></a>
+           </div>
+           <button  id="mixed" type="button">show</button>
+           <p id = "mixed-info">A JavaScript project... <br> 
+              a message from the universe</p>
+        </div>
+
+        <div class="column">
+            <div class="img-project-container">
+                <a href="./pages/gallery.html" target="blank" ><img class="img-digital-art" id="merlin" src="./images/sand24.jpg" 
+                alt="close up image of dark gold sand"></a>
+           </div>
+           <button  id="art" type="button">show</button>
+           <p id = "art-info"> artwork using... <br>
+                   Inkscape - vector graphics editor <br>
+                   Procreate - digital illustrator </p>        </div>
+
+    </div>
+</div>
+
+
+    <!-- skills -->
+    <div id="skill-section"> 
+        <h3 id="heading-skills">Skills</h3> 
+        <div id="skills"> 
+            <div class="skill-container">     
+                <i class="fa-brands fa-html5 fa-2xl"><span class="skill-lang">HTML</span></i>       
+            </div>
+
+            <div class="skill-container">     
+                <i class="fa-brands fa-css3 fa-2xl"><span class="skill-lang">CSS</span></i>  
+            </div>
+
+            <div class="skill-container">     
+                <i class="fa-brands  fa-square-js fa-2xl"><span class="skill-lang">Javascript</span></i>
+            </div>
+
+            <div class="skill-container" id="gitlogo">     
+                <i class="fa-brands  fa-github fa-2xl"><span class="skill-lang">GitHub</span></i>   
+            </div>
+        </div>
+
+    </div>
+
+    <!-- contact -->
+    <footer>
+        <h3 id="foot-h3">Contact</h3>
+        <div id="contact">
+            <div class="contact-img-container contact-logo">
+               <a href="mailto:retaylor220@gmail.com" aria-label="email rachel"> <img id="img-gmail" src="./images/gmail.png" alt="google email image"></a>
+            </div>
+            <div class="contact-logo">
+               <a  href="https://www.linkedin.com/in/racheltaylor220/" 
+               target="_blank" rel="noopener" aria-label="go to rachel's linkedin page"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            </div>
+            <div class="contact-logo">
+                <a  href="https://github.com/rae220/" 
+                target="_blank" rel="noopener" aria-label="go to rachel's github page"><i class=" lower fa-brands fa-github fa-2xl"></i></a>
+            </div>
+        </div>
+
+        <h6 id="copy">&copy 2023 Rae Taylor</h6>
+
+    </footer>
 </body>
- 
 </html>

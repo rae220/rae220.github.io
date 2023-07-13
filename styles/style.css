@@ -1,0 +1,280 @@
+html{
+    box-sizing: border-box;
+    font-size:16px;
+    border:0;
+    padding:0;   
+    font-family:'Poppins', sans-serif;
+    font-size:1.2rem;
+}  
+
+a{
+  color:aliceblue;
+  text-decoration: none;
+}
+
+/* header - includes name and nav bar */
+ header {
+    position:sticky;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-image: url("../images/sand14.jpg" );
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+ }
+
+#name{
+    font-family:Poppins,"sans-serif";
+    padding-left:2rem;
+    font-size:3rem;
+    color:aliceblue;
+}
+
+#nav-list{
+    display:flex;
+    flex-wrap:wrap;
+    list-style: none;
+    padding-right:0.75rem; 
+}
+
+#nav-list li{
+    padding:0 1rem;
+    font-size:1rem;
+    font-weight: 550;
+  }
+
+  #nav-list  a:hover{
+   color:cyan;
+ }
+
+
+
+/* about me section - includes a synopsis of me and image*/
+ #about-me{
+    background-image: url("../images/blue7.jpg" );
+    
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    flex-wrap:wrap;
+ }
+ 
+
+ .image-container #img-me{
+    /* border:2px solid green; */
+    margin:1rem;
+    height:10em;
+    width:10em;
+    border-radius:50%
+ }
+ .paragraph{
+    width:80%;
+    padding:0 2rem 1rem 2rem;  
+    color:azure 
+ }
+
+ .paragraph span{
+   font-weight: bold;
+ }
+ 
+
+
+
+/*projects section */
+
+h3{
+   margin-top:0%;
+   padding:1rem 2rem;
+   font-family: Poppins;
+   font-size:2rem;
+   color:azure;
+}
+
+
+#project-section{
+    background-image: url("../images/blue4.jpg" );
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+#projects{
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:space-around;
+}
+
+.column{
+   padding-bottom:4em;
+}
+
+
+.img-project-container:hover{
+   border: 0.62em solid cyan;
+}
+ .img-project-container{
+   border:0.6em solid lightsteelblue;
+   height: 6rem;
+   width:8rem;
+ }
+
+ .img-project-container img {
+   width:100%;
+   height:100%;
+   object-fit:fill;
+
+ }
+
+ #tea-info, #wood-info, #mixed-info, #art-info{
+   display:none;
+   color:azure;
+   font-size:small;
+ }
+
+ button{
+   padding: 0.4rem;
+   margin:0.5rem;
+   font-weight:bolder;
+   font: size 0.8em;
+   box-shadow: 1px 2px  cyan;
+   background-color:lightsteelblue;
+   
+ }
+ 
+ /* media queries */
+
+ @media screen  and (max-width:940px){
+   
+   .column{
+      flex:50%;
+   }   
+   #projects{
+      padding-left:5em;
+   } 
+}
+
+@media only screen and (max-width:600px){
+   #projects{
+      flex-direction:column;
+      align-content: center;
+      padding:0px;
+   }
+}
+ 
+
+ /* skills section */
+ #skill-section{
+   background-image: url("../images/blue.jpg" );
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+ }
+
+ #heading-skills{
+   margin-bottom:0;
+ }
+
+#skills{
+   display:flex;
+   flex-wrap: wrap;
+  }
+   
+ .skill-container {
+  padding:1em 2em 0 4em;
+  height: 3rem;
+  width:2rem;
+ }
+
+ #gitlogo{
+   padding-left:6em;
+ }
+
+ .skill-lang{
+   font-size:0.5em;
+   font-family: poppins, "sans-serif";
+   color:black;
+   font-weight:900;
+   padding-left:0.5em;
+ }
+
+
+ .fa-html5 {
+   color: #f65904;
+ }
+
+ .fa-css{
+   color: #0d3dea;
+ }
+
+ .fa-square-js, .fa-github{
+   color:#01010d;
+ }
+ 
+ /* media queries*/
+ @media screen  and (max-width:800px){
+   #gitlogo{
+      padding-left:4em;
+    }
+
+   .skill-container{
+      flex:25%;
+      padding:1em 2em 0 4em;
+      height: 3rem;
+      width:2rem;
+   }  
+} 
+
+
+/*footer dection*/
+
+footer{
+   background-image: url("../images/blue4.jpg" );  
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+   height:11em;
+}
+
+#contact{
+   padding:0 0 0 3em;
+   display:flex; 
+}
+
+.contact-img-container{
+   width:1.5em;
+}
+
+.contact-img-container img{
+   width:100%;
+   height:auto;
+}
+
+#linked-img{
+   padding-left:3em;
+   
+}
+#foot-h3{
+   padding-bottom:0;
+}
+
+.contact-logo{
+   padding-right:2em;
+}
+
+.lower{
+   color:azure
+}
+
+#copy{
+   text-align: center;
+   color:azure;
+   
+}
+
+   
